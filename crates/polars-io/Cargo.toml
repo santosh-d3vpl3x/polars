@@ -27,6 +27,9 @@ chrono-tz = { workspace = true, optional = true }
 fast-float = { workspace = true, optional = true }
 flate2 = { workspace = true, optional = true }
 futures = { workspace = true, optional = true }
+hashbrown = "0.14.5"
+hdfs-native = { workspace = true, optional = true }
+hdfs-native-object-store = { workspace = true, optional = true }
 itoa = { workspace = true, optional = true }
 memchr = { workspace = true }
 memmap = { package = "memmap2", version = "0.7" }
@@ -113,6 +116,7 @@ async = [
 cloud = ["object_store", "async", "polars-error/object_store", "url", "serde_json", "serde", "file_cache"]
 file_cache = ["async", "dep:blake3", "dep:fs4"]
 aws = ["object_store/aws", "cloud", "reqwest"]
+hdfs = ["cloud", "hdfs-native-object-store", "hdfs-native"]
 azure = ["object_store/azure", "cloud"]
 gcp = ["object_store/gcp", "cloud"]
 http = ["object_store/http", "cloud"]

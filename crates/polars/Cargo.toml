@@ -80,6 +80,7 @@ cloud_write = ["cloud", "polars-lazy?/cloud_write"]
 aws = ["async", "cloud", "polars-io/aws"]
 http = ["async", "cloud", "polars-io/http"]
 azure = ["async", "cloud", "polars-io/azure"]
+hdfs = ["async", "cloud", "polars-io/hdfs"]
 gcp = ["async", "cloud", "polars-io/gcp"]
 lazy = ["polars-core/lazy", "polars-lazy"]
 # commented out until UB is fixed
