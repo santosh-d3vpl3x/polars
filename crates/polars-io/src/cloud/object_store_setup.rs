@@ -1,3 +1,4 @@
+#[cfg(feature = "hdfs")]
 #[allow(clippy::disallowed_types)]
 use std::collections::HashMap;
 use std::sync::Arc;
